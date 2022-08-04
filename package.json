@@ -1,0 +1,34 @@
+{
+  "name": "browser-router",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint \"lib/**/*.ts\"",
+    "test": "wtr",
+    "test:coverage": "wtr --coverage",
+    "prepare": "rm -rf dist/* && tsc --project tsconfig.lib.json",
+    "start:dev": "wds",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "keywords": [],
+  "author": "hungtcs <hungtcs@outlook.com> (https://github.com/hungtcs)",
+  "license": "ISC",
+  "sideEffects": false,
+  "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "@web/dev-server": "^0.1.32",
+    "@web/dev-server-esbuild": "^0.3.1",
+    "@web/test-runner": "^0.13.31",
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "lit": "^2.2.8",
+    "lit-html": "^2.2.7",
+    "path-to-regexp": "^6.2.1",
+    "url-join": "^5.0.0"
+  }
+}
