@@ -1,11 +1,16 @@
 {
-  "name": "browser-router",
+  "name": "@cicara/browser-router",
   "version": "0.0.0",
   "description": "",
   "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "lint": "eslint \"lib/**/*.ts\"",
-    "test": "wtr",
+    "test": "",
     "test:coverage": "wtr --coverage",
     "prepare": "rm -rf dist/* && tsc --project tsconfig.lib.json",
     "start:dev": "wds",
@@ -27,7 +32,6 @@
   },
   "dependencies": {
     "lit": "^2.2.8",
-    "lit-html": "^2.2.7",
     "path-to-regexp": "^6.2.1",
     "url-join": "^5.0.0"
   }

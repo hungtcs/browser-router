@@ -1,8 +1,5 @@
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "moduleResolution": "classic"
-  },
   "include": [
     "./lib/**/*.ts"
   ],
